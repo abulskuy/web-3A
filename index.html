@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KEVIN | Web Designer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-scroll-container>
+    <section class="navbar">
+      <ul class="navbar-link-list">
+        <li class="navbar-list-item">
+          <p class="navbar-item">WORK</p>
+        </li>
+        <li class="navbar-list-item">
+          <p class="navbar-item">ABOUT</p>
+        </li>
+        <li class="navbar-list-item">
+          <p class="navbar-item">CONTACT</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hero" >
+      <div class="container-left" >
+        <h1 class="hero-teks" data-scroll data-scroll-speed="0.1">
+          HI, I'AM KEVIN 
+        </h1>
+      </div>
+      <div class="container-right" data-scroll-container>
+        <div class="hero-image" data-scroll-container>
+          <img
+            class="gambar-foto bareng"
+            src="16CCE1A0-202A-4693-8734-4D3429F66E52.jpeg"
+            alt="gambar-apa-kira-kira"
+            data-scroll
+            data-scroll-speed="10"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    ></link>
+    <script>
+      // (function () {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+        });
+      // });
+    </script>
+  </body>
+</html>
+
